@@ -1,0 +1,467 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "c06c1948-07d4-42b2-adef-030b011a8aeb",
+   "metadata": {},
+   "source": [
+    "# 01. importing libraries"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "63ad17c1-9896-46b3-9c87-3291501059f4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import pandas as pd"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "27096fea-5312-404d-a791-77d923de4bcb",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "f4b18e6d-0842-4ee2-bc36-039bca7a2f56",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import os"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c162d524-3e13-4c7e-9c7e-af1267d501b0",
+   "metadata": {},
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6546579d-b680-409c-b967-f50e4fef67bc",
+   "metadata": {},
+   "source": [
+    "# 02. python data types"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9d642599-4139-4fdb-9878-e6f16dd4b659",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#code ways of reaching a result of 100"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "1abfd380-9b6c-48bb-883c-0aa3486c71c3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "b = 10"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "8ddc24df-6e47-4386-a4ba-0f69115f68c2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "c = 50"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "b491fb16-0c29-481d-aac0-c60d881f4319",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "d = 200"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "e4fc9d36-bc01-4522-b5f9-981524859fbd",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "100"
+      ]
+     },
+     "execution_count": 13,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "b*b"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "de26095a-3364-41cf-8b77-eea059e3413b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "100"
+      ]
+     },
+     "execution_count": 14,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "c+c"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "dd683f3f-aabd-4098-9dcc-2a9e76364692",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "100"
+      ]
+     },
+     "execution_count": 15,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d-c-c"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a0636a69-9f81-4057-b457-69fc6d49cfde",
+   "metadata": {},
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b9dff8e0-7060-4008-98a2-c337211493ac",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Code 2 floating-point variables and divide by each other"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "5cc566e4-cdca-4035-bcff-ece5988d385d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = 9.6"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "673df8c5-d333-4e96-a251-04fca82bb6c0",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "b = 3.2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "3d490b63-cc0d-4e03-89fd-dca62450041d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2.9999999999999996"
+      ]
+     },
+     "execution_count": 20,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a/b"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "f50a2b46-8539-4281-a531-f735b7f41609",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a= 4.5"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "18cdffc0-0938-449f-a6b3-2747222e5bf7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "b=2.5"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "70a58e2e-7a23-48ac-a079-b16491a91543",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1.8"
+      ]
+     },
+     "execution_count": 23,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a/b"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a9033407-d1f4-4c80-9b99-120648711e80",
+   "metadata": {},
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "08713b57-32a5-4be3-b648-351e2a83d87d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Construct a short word made of separate strings"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "bc59b223-601c-4d9e-94f6-1222e4cb0f22",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = 'Hello'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "2da07556-a251-45c4-be1c-92631f2f9615",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "b = 'Innocent'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "a5e2938f-e703-4675-a3fe-f64d05236989",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'HelloInnocent'"
+      ]
+     },
+     "execution_count": 27,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a + b"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "63cc734f-ad4f-4c5c-9c23-9143dc82140f",
+   "metadata": {},
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1f20a335-b4be-42f1-b758-36a48c4bfac5",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Construct a short sentence made from separate string"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "9cc45426-ce10-45c1-8b57-ebe0229be375",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = ' I have'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "fbc93e30-fca3-4866-b1ba-16d86cde9f8b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "b = ' a lot'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "34dd81c2-ee2e-44ed-93ec-b17a760f436f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "c = ' of money'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "c23decaa-722b-4efb-9aff-61009f28fdf4",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "' I have a lot of money'"
+      ]
+     },
+     "execution_count": 35,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a + b + c"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "e3197b5c-a52f-48ae-94bb-f232e1d39c7e",
+   "metadata": {},
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "id": "80042e25-a878-4153-8b03-073e7fc4d7b9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = 'I can'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "26ed3936-5137-4488-890c-c21ba569c30f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "b = ' run very'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "id": "df347917-6017-489b-b4ff-dea3b4a52e0c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "c = ' fast'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "id": "7995d499-c18e-4eb0-9aed-3cfe3d69b9a6",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'I can run very fast'"
+      ]
+     },
+     "execution_count": 41,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a + b + c"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "24defdd1-d48f-4270-ae73-21e5a8d0ae78",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
