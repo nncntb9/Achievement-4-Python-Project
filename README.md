@@ -5,6 +5,7 @@ Instacart, an online grocery store that operates through an app. Instacart alrea
 ## Data
 The data comprises Orders, products, departments
 Details of the datasets are provided in the repository
+The data is [here](https://s3.amazonaws.com/coach-courses-us/public/courses/data-immersion/A4/A4_Data_Assets/customers.zip)
 ## Tools
 The project uses pandas and seaborn for analysis and visualization respectively.
 ## Executing code
